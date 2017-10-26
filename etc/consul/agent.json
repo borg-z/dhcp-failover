@@ -1,0 +1,12 @@
+{
+"server": true,
+"datacenter": "dc1",
+"data_dir": "/opt/consul",
+"log_level": "INFO",
+"rejoin_after_leave": true,
+"bind_addr": "10.3.2.240",
+"client_addr": "0.0.0.0",
+"bootstrap_expect": 2,
+"enable_syslog": true,
+"enable_script_checks" : true
+}

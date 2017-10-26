@@ -1,0 +1,11 @@
+ {
+  "ID": "gateway",
+  "Name": "gateway",
+  "Tags": [
+    "gateway, dhcp"
+  ],
+  "Check": {
+    "Script": "/etc/consul/service/ping.py",
+    "Interval": "5s"
+  }
+}

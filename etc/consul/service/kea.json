@@ -1,0 +1,11 @@
+ {
+  "ID": "kea",
+  "Name": "kea",
+  "Tags": [
+    "kea", "dhcp"
+  ],
+  "Check": {
+    "Script": "/etc/consul/service/keatest.py",
+    "Interval": "5s"
+  }
+}

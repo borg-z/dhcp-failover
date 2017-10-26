@@ -1,0 +1,11 @@
+ {
+  "ID": "dhcp-client-test",
+  "Name": "dhcp-client-test",
+  "Tags": [
+    "dhcp"
+  ],
+  "Check": {
+    "Script": "/etc/consul/service/dhcp-client-check.py",
+    "Interval": "5s"
+  }
+}

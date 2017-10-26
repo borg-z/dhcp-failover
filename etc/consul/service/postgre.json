@@ -1,0 +1,11 @@
+ {
+  "ID": "postgres",
+  "Name": "postgres",
+  "Tags": [
+    "postgresql", "dhcp"
+  ],
+  "Check": {
+    "Script": "/etc/consul/service/postgretest.py",
+    "Interval": "5s"
+  }
+}
