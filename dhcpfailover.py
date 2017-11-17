@@ -1,5 +1,4 @@
 #!/usr/bin/python3.6
-
 import consul
 import time
 from subprocess import getoutput
@@ -319,20 +318,23 @@ class dhcp_failower():
 dhcp = dhcp_failower()
 
 
-def diag():
-    dhcp.diag()
 
-
-def daemon():
-    while True:
-        dhcp.monkeybusiness()
-        time.sleep(5)
-        dhcp.monkeybusiness()
-        time.sleep(5)
-        dhcp.kill_unhealthy()
 
 
 if __name__ == "__main__":
+   
+    def diag():
+        dhcp.diag()
+
+
+    def daemon():
+        while True:
+            dhcp.monkeybusiness()
+            time.sleep(5)
+            dhcp.monkeybusiness()
+            time.sleep(5)
+            dhcp.kill_unhealthy()
+
     parser = argh.ArghParser()
     parser.add_commands([diag, daemon])
     parser.dispatch()
